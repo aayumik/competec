@@ -126,17 +126,19 @@ public class licaoCasa {
         }
     }
     */
-
+    int n;
     int numDirecao;
     int i = 1;
 
     System.out.println("Digite 1 para direita, 2 para esquerda, 3 para passar o viaduto a frente, 4 para esperar o sinal, 5 para continuar indo reto.");
 
     Scanner entrada = new Scanner(System.in);
+    System.out.println("qauntas vc deseja");
+    n  = entrada.nextInt();
     System.out.println("Digite qual direção você deseja começar.");
     numDirecao  = entrada.nextInt();  
 
-    while (i < 6)
+    while (i <= n) {
         if (numDirecao == 1) {
             System.out.println("Pra já!");
             numDirecao  = entrada.nextInt();  
@@ -154,9 +156,9 @@ public class licaoCasa {
             numDirecao  = entrada.nextInt(); 
         }else {
             System.out.println("Entrada inválida.");
-            bre
+            break;
         }
-
+    }
     }
 }
 
