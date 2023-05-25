@@ -1,11 +1,11 @@
 import java.util.Scanner;
-public class aula02 {
+public class licaoCasa {
     public static void main(String[] args) {
 
 
         // DESAFIO PROPOSTO EM CASA.
         // DDD = só capitais!
-
+        /* 
         int DDD;
         Scanner entrada = new Scanner(System.in);
         System.out.println("DDD: ");
@@ -125,4 +125,39 @@ public class aula02 {
             System.out.println("Este DDD não está configurado.");
         }
     }
+    */
+
+    int numDirecao;
+    int i = 1;
+
+    System.out.println("Digite 1 para direita, 2 para esquerda, 3 para passar o viaduto a frente, 4 para esperar o sinal, 5 para continuar indo reto.");
+
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("Digite qual direção você deseja começar.");
+    numDirecao  = entrada.nextInt();  
+
+    while (i < 6)
+        if (numDirecao == 1) {
+            System.out.println("Pra já!");
+            numDirecao  = entrada.nextInt();  
+        }else if (numDirecao == 2) {
+            System.out.println("Esquerdei e agora?");
+            numDirecao  = entrada.nextInt(); 
+        }else if (numDirecao == 3) {
+            System.out.println("Eita pipoco. Zummm!");
+            numDirecao  = entrada.nextInt(); 
+        }else if (numDirecao == 4) {
+            System.out.println("Ok!");
+            numDirecao  = entrada.nextInt(); 
+        }else if (numDirecao == 5) {
+            System.out.println("Pronto e agora!");
+            numDirecao  = entrada.nextInt(); 
+        }else {
+            System.out.println("Entrada inválida.");
+            bre
+        }
+
+    }
+}
+
     
